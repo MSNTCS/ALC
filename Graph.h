@@ -79,7 +79,7 @@ namespace graphns
     }
     // the end
 
-    string print_digits(double d, int precision)
+    extern string print_digits(double d, int precision)
     {
         if( d < (1.0/(pow(10.0,precision))) )
         {

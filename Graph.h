@@ -1,4 +1,6 @@
-
+//
+// Created by Mohammadsadegh Najafi on 2020/04/19.
+//
 #include <cstdlib>
 #include <sstream>
 #include <vector>
@@ -23,8 +25,8 @@
 using namespace std;
 using namespace boost;
 
-#ifndef GRAPH_H
-#define GRAPH_H
+#ifndef ALC__GRAPH_H
+#define ALC__GRAPH_H
 
 namespace graphns
 {
@@ -618,4 +620,5 @@ public:
 
 };
 
-#endif
+
+#endif //ALC__GRAPH_H

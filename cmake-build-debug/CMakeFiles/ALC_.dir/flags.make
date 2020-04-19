@@ -4,7 +4,7 @@
 # compile CXX with /Library/Developer/CommandLineTools/usr/bin/c++
 CXX_FLAGS = -g -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX10.15.sdk   -std=gnu++2a
 
-CXX_DEFINES = 
+CXX_DEFINES = -DHAS_BOOST
 
-CXX_INCLUDES = 
+CXX_INCLUDES = -I/usr/local/include 
 

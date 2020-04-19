@@ -1,3 +1,9 @@
+//
+// Created by Mohammadsadegh Najafi on 2020/04/19.
+//
+
+#ifndef ALC__DGRAPH_H
+#define ALC__DGRAPH_H
 #include "Graph.h"
 
 #include <set>
@@ -7,8 +13,6 @@
 using namespace graphns;
 using namespace boost;
 
-#ifndef DGRAPH_H
-#define DGRAPH_H
 
 /**
 * This class contains a normal graph, just two lists with In and Out edges
@@ -23,7 +27,7 @@ private:
     bool allowMultipleEdges;
 
 public:
-    DGraph(string fileName);
+    explicit DGraph(string fileName);
     DGraph(EdgeSet* edgeSet);
     DGraph(EdgeSet* edgeSet, int pN, int pL);
     DGraph(EdgeSet* edgeSet, int pN, int pL, bool allowMultipleEdges);
@@ -74,4 +78,5 @@ public:
     int computeDiameter();
 
 };
-#endif
+
+#endif //ALC__DGRAPH_H

@@ -1,3 +1,7 @@
+//
+// Created by Mohammadsadegh Najafi on 2020/04/19.
+//
+
 #include "DGraph.h"
 
 #include <climits>
@@ -919,3 +923,7 @@ int DGraph::computeDiameter()
 
     return diameter + 1;
 };
+
+DGraph::DGraph(string fileName) {
+
+}

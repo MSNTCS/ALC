@@ -3,7 +3,7 @@ project(ALC_)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(ALC_ main.cpp DGraph.h Graph.h DGraph.cpp)
+add_executable(ALC_ main.cpp DGraph.h DGraph.cpp Graph.h)
 
 FIND_PACKAGE(Boost)
 IF (Boost_FOUND)

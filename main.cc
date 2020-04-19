@@ -1,18 +1,13 @@
 #include <algorithm>
 #include <iostream>
 
-#include "DGraph.h"
+#include "DGraph.cc"
 
 using namespace std;
 using namespace graphns;
 
 
 
-/*
-With this file we can test the speed-up and correctness of queryAll-queries,
-i.e. find all nodes v' s.t. for a given v in V and L' subset of L we have that
-query(v,v',L) == True
-*/
 int main(int argc, char *argv[])
 {
     if( argc < 2 )

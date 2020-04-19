@@ -924,6 +924,3 @@ int DGraph::computeDiameter()
     return diameter + 1;
 };
 
-DGraph::DGraph(string fileName) {
-
-}

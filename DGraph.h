@@ -2,13 +2,14 @@
 // Created by Mohammadsadegh Najafi on 2020/04/19.
 //
 
-#ifndef ALC__DGRAPH_H
-#define ALC__DGRAPH_H
+
 #include "Graph.h"
 
 #include <set>
 #include <stack>
 #include <boost/dynamic_bitset.hpp>
+#ifndef ALC__DGRAPH_H
+#define ALC__DGRAPH_H
 
 using namespace graphns;
 using namespace boost;

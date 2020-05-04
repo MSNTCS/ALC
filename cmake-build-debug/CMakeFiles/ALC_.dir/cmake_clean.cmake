@@ -1,8 +1,8 @@
 file(REMOVE_RECURSE
   "ALC_"
   "ALC_.pdb"
-  "CMakeFiles/ALC_.dir/DGraph.cpp.o"
-  "CMakeFiles/ALC_.dir/main.cpp.o"
+  "CMakeFiles/ALC_.dir/DGraph.cc.o"
+  "CMakeFiles/ALC_.dir/main.cc.o"
 )
 
 # Per-language clean rules from dependency scanning.

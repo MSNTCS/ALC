@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mohammadsadeghnajafi/CLionProjects/ALC+
+CMAKE_SOURCE_DIR = /Users/mohammadsadeghnajafi/graph-handler
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mohammadsadeghnajafi/CLionProjects/ALC+/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/mohammadsadeghnajafi/graph-handler/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mohammadsadeghnajafi/CLionProjects/ALC+/cmake-build-debug/CMakeFiles /Users/mohammadsadeghnajafi/CLionProjects/ALC+/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mohammadsadeghnajafi/graph-handler/cmake-build-debug/CMakeFiles /Users/mohammadsadeghnajafi/graph-handler/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mohammadsadeghnajafi/CLionProjects/ALC+/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mohammadsadeghnajafi/graph-handler/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,59 +123,59 @@ ALC_/fast:
 	$(MAKE) -f CMakeFiles/ALC_.dir/build.make CMakeFiles/ALC_.dir/build
 .PHONY : ALC_/fast
 
-DGraph.o: DGraph.cpp.o
+DGraph.o: DGraph.cc.o
 
 .PHONY : DGraph.o
 
 # target to build an object file
-DGraph.cpp.o:
-	$(MAKE) -f CMakeFiles/ALC_.dir/build.make CMakeFiles/ALC_.dir/DGraph.cpp.o
-.PHONY : DGraph.cpp.o
+DGraph.cc.o:
+	$(MAKE) -f CMakeFiles/ALC_.dir/build.make CMakeFiles/ALC_.dir/DGraph.cc.o
+.PHONY : DGraph.cc.o
 
-DGraph.i: DGraph.cpp.i
+DGraph.i: DGraph.cc.i
 
 .PHONY : DGraph.i
 
 # target to preprocess a source file
-DGraph.cpp.i:
-	$(MAKE) -f CMakeFiles/ALC_.dir/build.make CMakeFiles/ALC_.dir/DGraph.cpp.i
-.PHONY : DGraph.cpp.i
+DGraph.cc.i:
+	$(MAKE) -f CMakeFiles/ALC_.dir/build.make CMakeFiles/ALC_.dir/DGraph.cc.i
+.PHONY : DGraph.cc.i
 
-DGraph.s: DGraph.cpp.s
+DGraph.s: DGraph.cc.s
 
 .PHONY : DGraph.s
 
 # target to generate assembly for a file
-DGraph.cpp.s:
-	$(MAKE) -f CMakeFiles/ALC_.dir/build.make CMakeFiles/ALC_.dir/DGraph.cpp.s
-.PHONY : DGraph.cpp.s
+DGraph.cc.s:
+	$(MAKE) -f CMakeFiles/ALC_.dir/build.make CMakeFiles/ALC_.dir/DGraph.cc.s
+.PHONY : DGraph.cc.s
 
-main.o: main.cpp.o
+main.o: main.cc.o
 
 .PHONY : main.o
 
 # target to build an object file
-main.cpp.o:
-	$(MAKE) -f CMakeFiles/ALC_.dir/build.make CMakeFiles/ALC_.dir/main.cpp.o
-.PHONY : main.cpp.o
+main.cc.o:
+	$(MAKE) -f CMakeFiles/ALC_.dir/build.make CMakeFiles/ALC_.dir/main.cc.o
+.PHONY : main.cc.o
 
-main.i: main.cpp.i
+main.i: main.cc.i
 
 .PHONY : main.i
 
 # target to preprocess a source file
-main.cpp.i:
-	$(MAKE) -f CMakeFiles/ALC_.dir/build.make CMakeFiles/ALC_.dir/main.cpp.i
-.PHONY : main.cpp.i
+main.cc.i:
+	$(MAKE) -f CMakeFiles/ALC_.dir/build.make CMakeFiles/ALC_.dir/main.cc.i
+.PHONY : main.cc.i
 
-main.s: main.cpp.s
+main.s: main.cc.s
 
 .PHONY : main.s
 
 # target to generate assembly for a file
-main.cpp.s:
-	$(MAKE) -f CMakeFiles/ALC_.dir/build.make CMakeFiles/ALC_.dir/main.cpp.s
-.PHONY : main.cpp.s
+main.cc.s:
+	$(MAKE) -f CMakeFiles/ALC_.dir/build.make CMakeFiles/ALC_.dir/main.cc.s
+.PHONY : main.cc.s
 
 # Help Target
 help:

@@ -8,6 +8,7 @@ The make file is not included here. Will be added soon.
 
 ## installation
 ```bash
+cd graph_maintenance
 g++ main.cc -o graph 
 ./graph $YOUR_GRAPH.edge
 ```

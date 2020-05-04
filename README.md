@@ -13,9 +13,9 @@ g++ main.cc -o graph
 ./graph $YOUR_GRAPH.edge
 ```
 
-#Query Generator 
+# Query Generator 
 query generator is supposed to generate false and true queries for labeled graphs. 
-##How to use
+## How to use
 ```bash
 cd query_generator
 g++ query_generator.cc -o query

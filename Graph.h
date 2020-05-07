@@ -69,6 +69,7 @@ public:
     Graph* getTranspose();
     void fillorder(Vertex* s, stack<Vertex*> &stack);
     void SCC();
+    unordered_set<string> find_landmarks(int k);
     void generate_subgraphs(int i);
     bool BFS_for_subgraphs (string s, string to, unordered_set<string> labelset);
     list<Vertex*> landmarkIndex(int);

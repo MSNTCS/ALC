@@ -1,7 +1,7 @@
 #include <algorithm>
 #include <iostream>
 
-#include "graph_maintenance/DGraph.cc"
+#include "DGraph.cc"
 
 using namespace std;
 using namespace graphns;

@@ -1,0 +1,124 @@
+struct Query {
+    string from;
+    string to;
+    string label;
+};
+int runTestsPerIndex(vector< vector< vector<double> > >& queryTimes,
+                     vector< double >& queryTimeSums,
+                     vector<unsigned long>& indexSizes, vector<double>& indexTimes, unsigned int noOfQuerySets,
+                     string edgeFile, unsigned long size, double indexingTime)
+{
+
+    // store the size and index time
+    indexSizes.push_back( size );
+    indexTimes.push_back( indexingTime );
+
+    vector< vector< double > > s (0);
+
+    // loop over all query sets
+    for(int j = 0; j < noOfQuerySets; j++)
+    {
+
+        vector< double > t (0);
+        double trueSum = 0.0;
+        double falseSum = 0.0;
+
+        string trueFileName = edgeFile + to_string(j) + ".true";
+        string falseFileName = edgeFile + to_string(j) + ".false";
+
+        set<Query> trueSet; //query set that returns true
+        set<Query> falseSet; //qyery set that returns false
+
+        loadQueryFile(trueFileName, trueSet); // load the two query files
+        loadQueryFile(falseFileName, falseSet);
+
+        int query_times = trueSet.size();
+        int i = 0;
+
+        for (auto p : trueSet)
+        {
+            VertexID from = p.first.first;
+            VertexID to = p.first.second;
+            LabelSet ls = p.second;
+
+            // average over 5 runs
+            double avg = 0.0;
+            vector< double > avgs;
+
+            for(int k = 0; k < 5; k++)
+            {
+                if( index->query(from, to, ls) == false )
+                {
+                    cout << "Query " << i << ": (" << from << "," << to << "," << labelSetToString(ls) << ") should be true" << endl;
+                    avg = -1.0;
+                    return 1;
+                }
+
+                avgs.push_back( index->getLastQueryTime() );
+            }
+
+            sort( avgs.begin(), avgs.end() );
+            for(int k = 0; k < 3; k++)
+            {
+                avg += avgs[k];
+            }
+
+            avg /= 3;
+
+            cout << "*Query " << i << ": (" << from << "," << to << "," << labelSetToString(ls) << ", true), avg=" << print_digits(avg,11) << endl;
+            i++;
+
+            trueSum += avg;
+            t.push_back( avg );
+        }
+
+        i = 0;
+        for (auto p : falseSet)
+        {
+            VertexID from = p.first.first;
+            VertexID to = p.first.second;
+            LabelSet ls = p.second;
+
+            // average over 5 runs
+            double avg = 0.0;
+            vector< double > avgs;
+
+            for(int k = 0; k < 5; k++)
+            {
+                if( index->query(from, to, ls) == true )
+                {
+                    cout << "Query " << i << ": (" << from << "," << to << "," << labelSetToString(ls) << ") should be false" << endl;
+                    avg = -1.0;
+                    return 1;
+                }
+
+                avgs.push_back( index->getLastQueryTime() );
+            }
+
+            sort( avgs.begin(), avgs.end() );
+            for(int k = 0; k < 3; k++)
+            {
+                avg += avgs[k];
+            }
+
+            avg /= 3;
+            cout << "*Query " << i << ": (" << from << "," << to << "," << labelSetToString(ls) << ", false), avg=" << print_digits(avg,11) << endl;
+            i++;
+
+            falseSum += avg;
+            t.push_back( avg );
+        }
+
+        cout << "indexName=" << indexName << ",j=" << j << ",trueSum=" << trueSum << ",falseSum=" << falseSum << endl;
+
+        queryTimeSums.push_back( trueSum );
+        queryTimeSums.push_back( falseSum );
+
+        s.push_back( t );
+    }
+
+    queryTimes.push_back( s );
+
+    cout << "------" << endl;
+    return 0;
+}

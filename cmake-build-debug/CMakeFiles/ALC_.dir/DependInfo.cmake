@@ -4,8 +4,8 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/mohammadsadeghnajafi/graph-handler/DGraph.cc" "/Users/mohammadsadeghnajafi/graph-handler/cmake-build-debug/CMakeFiles/ALC_.dir/DGraph.cc.o"
-  "/Users/mohammadsadeghnajafi/graph-handler/main.cc" "/Users/mohammadsadeghnajafi/graph-handler/cmake-build-debug/CMakeFiles/ALC_.dir/main.cc.o"
+  "/Users/mohammadsadeghnajafi/CLionProjects/ALC/graph_maintenance/DGraph.cc" "/Users/mohammadsadeghnajafi/CLionProjects/ALC/cmake-build-debug/CMakeFiles/ALC_.dir/graph_maintenance/DGraph.cc.o"
+  "/Users/mohammadsadeghnajafi/CLionProjects/ALC/main.cc" "/Users/mohammadsadeghnajafi/CLionProjects/ALC/cmake-build-debug/CMakeFiles/ALC_.dir/main.cc.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

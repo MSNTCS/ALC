@@ -1,7 +1,7 @@
 file(REMOVE_RECURSE
   "ALC_"
   "ALC_.pdb"
-  "CMakeFiles/ALC_.dir/DGraph.cc.o"
+  "CMakeFiles/ALC_.dir/graph_maintenance/DGraph.cc.o"
   "CMakeFiles/ALC_.dir/main.cc.o"
 )
 

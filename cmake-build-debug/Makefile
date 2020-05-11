@@ -48,10 +48,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/mohammadsadeghnajafi/graph-handler
+CMAKE_SOURCE_DIR = /Users/mohammadsadeghnajafi/CLionProjects/ALC
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/mohammadsadeghnajafi/graph-handler/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/mohammadsadeghnajafi/CLionProjects/ALC/cmake-build-debug
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mohammadsadeghnajafi/graph-handler/cmake-build-debug/CMakeFiles /Users/mohammadsadeghnajafi/graph-handler/cmake-build-debug/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mohammadsadeghnajafi/CLionProjects/ALC/cmake-build-debug/CMakeFiles /Users/mohammadsadeghnajafi/CLionProjects/ALC/cmake-build-debug/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mohammadsadeghnajafi/graph-handler/cmake-build-debug/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/mohammadsadeghnajafi/CLionProjects/ALC/cmake-build-debug/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -123,32 +123,32 @@ ALC_/fast:
 	$(MAKE) -f CMakeFiles/ALC_.dir/build.make CMakeFiles/ALC_.dir/build
 .PHONY : ALC_/fast
 
-DGraph.o: DGraph.cc.o
+graph_maintenance/DGraph.o: graph_maintenance/DGraph.cc.o
 
-.PHONY : DGraph.o
+.PHONY : graph_maintenance/DGraph.o
 
 # target to build an object file
-DGraph.cc.o:
-	$(MAKE) -f CMakeFiles/ALC_.dir/build.make CMakeFiles/ALC_.dir/DGraph.cc.o
-.PHONY : DGraph.cc.o
+graph_maintenance/DGraph.cc.o:
+	$(MAKE) -f CMakeFiles/ALC_.dir/build.make CMakeFiles/ALC_.dir/graph_maintenance/DGraph.cc.o
+.PHONY : graph_maintenance/DGraph.cc.o
 
-DGraph.i: DGraph.cc.i
+graph_maintenance/DGraph.i: graph_maintenance/DGraph.cc.i
 
-.PHONY : DGraph.i
+.PHONY : graph_maintenance/DGraph.i
 
 # target to preprocess a source file
-DGraph.cc.i:
-	$(MAKE) -f CMakeFiles/ALC_.dir/build.make CMakeFiles/ALC_.dir/DGraph.cc.i
-.PHONY : DGraph.cc.i
+graph_maintenance/DGraph.cc.i:
+	$(MAKE) -f CMakeFiles/ALC_.dir/build.make CMakeFiles/ALC_.dir/graph_maintenance/DGraph.cc.i
+.PHONY : graph_maintenance/DGraph.cc.i
 
-DGraph.s: DGraph.cc.s
+graph_maintenance/DGraph.s: graph_maintenance/DGraph.cc.s
 
-.PHONY : DGraph.s
+.PHONY : graph_maintenance/DGraph.s
 
 # target to generate assembly for a file
-DGraph.cc.s:
-	$(MAKE) -f CMakeFiles/ALC_.dir/build.make CMakeFiles/ALC_.dir/DGraph.cc.s
-.PHONY : DGraph.cc.s
+graph_maintenance/DGraph.cc.s:
+	$(MAKE) -f CMakeFiles/ALC_.dir/build.make CMakeFiles/ALC_.dir/graph_maintenance/DGraph.cc.s
+.PHONY : graph_maintenance/DGraph.cc.s
 
 main.o: main.cc.o
 
@@ -186,9 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... ALC_"
-	@echo "... DGraph.o"
-	@echo "... DGraph.i"
-	@echo "... DGraph.s"
+	@echo "... graph_maintenance/DGraph.o"
+	@echo "... graph_maintenance/DGraph.i"
+	@echo "... graph_maintenance/DGraph.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -1,4 +1,4 @@
-/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/mohammadsadeghnajafi/graph-handler
+/Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /Users/mohammadsadeghnajafi/CLionProjects/ALC
 -- The C compiler identification is AppleClang 11.0.3.11030032
 -- The CXX compiler identification is AppleClang 11.0.3.11030032
 -- Check for working C compiler: /Library/Developer/CommandLineTools/usr/bin/cc
@@ -16,4 +16,4 @@
 -- Found Boost: /usr/local/lib/cmake/Boost-1.72.0/BoostConfig.cmake (found version "1.72.0")  
 -- Configuring done
 -- Generating done
--- Build files have been written to: /Users/mohammadsadeghnajafi/graph-handler/cmake-build-debug
+-- Build files have been written to: /Users/mohammadsadeghnajafi/CLionProjects/ALC/cmake-build-debug
